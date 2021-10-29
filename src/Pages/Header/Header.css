@@ -1,0 +1,13 @@
+.heading{
+    /* background-color:black; */
+    color: white;
+    /* margin-top: 90px; */
+    /* margin: 10px; */
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
+.nav{
+    background-color: black;
+    padding: 10px;
+}

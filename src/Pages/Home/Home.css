@@ -1,0 +1,16 @@
+.half-width{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    margin-top: 450px;
+   margin-bottom: 100px;
+}
+
+@media only screen and (max-width:688px){ 
+  .half-width{
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     
+ }
+}  
