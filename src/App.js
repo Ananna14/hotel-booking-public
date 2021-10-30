@@ -5,21 +5,15 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Service from './Pages/Header/Service/Service';
 import Order from './Pages/Header/Service/Order/Order';
 import Header from './Pages/Header/Header';
-// import Home from './Pages/Home/Home';
 import Banner from './Pages/Home/Banner/Banner';
 import Footer from './Pages/Home/Banner/Footer/Footer';
 import NotFound from './Pages/Header/Service/NotFound/NotFound';
 import Login from './Pages/Login/Login';
-import initializeAuthentication from './Firebase/Firebase.init';
 import AuthProvider from './Firebase/Context/AuthProvider';
 import Details from './Pages/Home/Details';
 import Manage from './Pages/Header/Service/Order/Manage';
-// import Header from './Pages/Header/Header';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import NewService from './Pages/MyOrders/NewService/NewService';
-// import NotFound from './Pages/MyOrders/NotFound/NotFound';
-// // import Manage from './Pages/MyOrders/ManageOrders/Manage';
-// import Manage from './Pages/MyOrders/ManageOrders/Manage'
+import ExtraAdd from './Pages/Home/ExtraAdd/ExtraAdd';
+import ExtraOne from './Pages/Home/ExtraAdd/ExtraOne/ExtraOne';
 
 
 function App() {
@@ -32,9 +26,13 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home></Home>
+            <ExtraOne></ExtraOne>
+            <ExtraAdd></ExtraAdd>
           </Route>
           <Route path="/home">
             <Home></Home>
+            <ExtraOne></ExtraOne>
+            <ExtraAdd></ExtraAdd>
           </Route>
           <Route path="/myOrder">
             <Order></Order>
