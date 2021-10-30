@@ -1,0 +1,16 @@
+.services{
+    margin-top: 500px;
+}
+.input-added{
+    width: 50%;
+    height: 30px;
+    margin: 7px;
+}
+.google-btn{
+    background-color: tomato;
+    color: white;
+    width: 200px;
+    margin-bottom: 100px;
+    height: 30px;
+    border-radius: 10px;
+}

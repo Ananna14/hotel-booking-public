@@ -6,7 +6,7 @@ const Home = () => {
     const [rooms, setRooms] = useState([])
 
     useEffect(()=>[
-        fetch('./fakeData.json')
+        fetch('http://localhost:5000/services')
         .then(res => res.json())
         .then(data => setRooms(data))
     ],[])

@@ -9,6 +9,10 @@ import Header from './Pages/Header/Header';
 import Banner from './Pages/Home/Banner/Banner';
 import Footer from './Pages/Home/Banner/Footer/Footer';
 import NotFound from './Pages/Header/Service/NotFound/NotFound';
+import Login from './Pages/Login/Login';
+import initializeAuthentication from './Firebase/Firebase.init';
+import AuthProvider from './Firebase/Context/AuthProvider';
+import Details from './Pages/Home/Details';
 // import Header from './Pages/Header/Header';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import NewService from './Pages/MyOrders/NewService/NewService';
@@ -16,9 +20,11 @@ import NotFound from './Pages/Header/Service/NotFound/NotFound';
 // // import Manage from './Pages/MyOrders/ManageOrders/Manage';
 // import Manage from './Pages/MyOrders/ManageOrders/Manage'
 
+
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Router>
        <Header></Header>
        <Banner></Banner>
@@ -35,12 +41,19 @@ function App() {
           <Route path="/service">
             <Service></Service>
           </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/details/:userOverview">
+            <Details></Details>
+          </Route>
           <Route path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>
       </Router>
+      </AuthProvider>
      </div>
   );
 }
