@@ -7,7 +7,8 @@ const Header = () => {
     const {user, logOut} = useAuth();
     return (
         <div  className="nav">
-            <Link className="heading" to="/home">My Orders</Link>
+            <Link className="heading" to="/home">Home</Link>
+            <Link className="heading" to="/myOrder">My Orders</Link>
             <Link className="heading" to="/orders">Manage All Orders</Link>
             <Link className="heading" to="/service">Add A New Service</Link>
         { user.email && <span style={{color:'white'}}>Hello{user.displayName}</span>}

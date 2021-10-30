@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
+// import './Details.css'
 
 const Details = () => {
-    const {userOverview} = useParams()
+    const {userOverview} = useParams();
+    const [service, setService] = useState({});
+
+    useEffect(()=>{
+        fetch(`http://localhost:5000/services/${userOverview}`)
+        .then(res => res.json())
+        .then(data => setService(data))
+    
+    },[])
     return (
         <div className="services">
-            <h1>Id: {userOverview}</h1>
+            <h2 className="top-item">Detaile of:{service.name}</h2>
+            <h1>this is booking: {userOverview}</h1>
         </div>
     )
 }

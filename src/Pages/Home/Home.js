@@ -5,11 +5,11 @@ import './Home.css'
 const Home = () => {
     const [rooms, setRooms] = useState([])
 
-    useEffect(()=>[
+    useEffect(()=>{
         fetch('http://localhost:5000/services')
         .then(res => res.json())
         .then(data => setRooms(data))
-    ],[])
+    },[])
     return (
         <div className="half-width col-12">
             {

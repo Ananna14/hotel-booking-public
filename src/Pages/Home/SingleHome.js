@@ -11,7 +11,7 @@ const SingleHome = ({room}) => {
             <h3>{price}</h3>
             <h2>{name}</h2>
             <p>{description}</p>
-            <Link to={`/details/${_id}`} className="btn-color">Buy Now</Link>
+            <Link to={`/details/${_id}`} className="google-btn">Buy Now</Link>
         </div>
     )
 }

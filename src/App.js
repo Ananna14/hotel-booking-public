@@ -13,6 +13,7 @@ import Login from './Pages/Login/Login';
 import initializeAuthentication from './Firebase/Firebase.init';
 import AuthProvider from './Firebase/Context/AuthProvider';
 import Details from './Pages/Home/Details';
+import Manage from './Pages/Header/Service/Order/Manage';
 // import Header from './Pages/Header/Header';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import NewService from './Pages/MyOrders/NewService/NewService';
@@ -35,8 +36,11 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/orders">
+          <Route path="/myOrder">
             <Order></Order>
+          </Route>
+          <Route path="/orders">
+            <Manage></Manage>
           </Route>
           <Route path="/service">
             <Service></Service>
