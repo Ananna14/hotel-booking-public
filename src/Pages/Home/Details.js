@@ -16,6 +16,7 @@ const Details = () => {
         <div className="services">
             <h2 className="top-item">Detaile of:{service.name}</h2>
             <h1>this is booking: {userOverview}</h1>
+
         </div>
     )
 }

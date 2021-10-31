@@ -46,7 +46,7 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/details/:userOverview">
+          <Route path="/details">
             <Details></Details>
           </Route>
           <Route path="*">
