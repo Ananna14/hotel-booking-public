@@ -6,7 +6,7 @@ import './Header.css'
 const Header = () => {
     const {user, logOut} = useAuth();
     return (
-        <div  className="nav">
+        <div className="nav">
             <Link className="heading" to="/home">Home</Link>
             <Link className="heading" to="/myOrder">My Orders</Link>
             <Link className="heading" to="/orders">Manage All Orders</Link>

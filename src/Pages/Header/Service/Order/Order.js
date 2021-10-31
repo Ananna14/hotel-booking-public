@@ -14,7 +14,7 @@ const Order = () => {
     return (
         <div className="half-width col-12">
             <h1>{rooms.displayName}</h1>
-            <h1>Email:{rooms.email}</h1>
+            <h1>{rooms.email}</h1>
             {
                rooms.map(room=><SingleHome className="single-item"
                 key={room.price}

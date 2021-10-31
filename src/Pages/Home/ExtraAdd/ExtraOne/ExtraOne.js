@@ -19,9 +19,9 @@ const ExtraOne = () => {
             <button>Read more</button>
             </div>
             <div>
-            <h5>Guarantee</h5>
             <img src="https://bestwebsoft.com/demo_theme/hotel-finder/images/icon-ups-check.png" alt="" />
             <p>Guarantee definition, a promise or assurance, especially one in writing, that something is of specified quality, content, benefit, etc.</p>
+            <h5>Guarantee</h5>
             <button>Read more</button>
             </div>
             </div>

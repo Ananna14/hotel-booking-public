@@ -9,11 +9,13 @@ import Banner from './Pages/Home/Banner/Banner';
 import Footer from './Pages/Home/Banner/Footer/Footer';
 import NotFound from './Pages/Header/Service/NotFound/NotFound';
 import Login from './Pages/Login/Login';
-import AuthProvider from './Firebase/Context/AuthProvider';
+// import AuthProvider from './Firebase/Context/AuthProvider';
 import Details from './Pages/Home/Details';
 import Manage from './Pages/Header/Service/Order/Manage';
 import ExtraAdd from './Pages/Home/ExtraAdd/ExtraAdd';
 import ExtraOne from './Pages/Home/ExtraAdd/ExtraOne/ExtraOne';
+import AuthProvider from './Firebase/Context/AuthProvider';
+import PrivateRouter from './Firebase/Context/PrivateRouter';
 
 
 function App() {
@@ -34,9 +36,9 @@ function App() {
             <ExtraOne></ExtraOne>
             <ExtraAdd></ExtraAdd>
           </Route>
-          <Route path="/myOrder">
+          <PrivateRouter path="/myOrder">
             <Order></Order>
-          </Route>
+          </PrivateRouter>
           <Route path="/orders">
             <Manage></Manage>
           </Route>

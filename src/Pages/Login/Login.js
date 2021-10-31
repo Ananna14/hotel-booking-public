@@ -1,10 +1,24 @@
 import React from 'react'
+// import { useHistory, useLocation } from 'react-router'
 import useAuth from '../../Firebase/hooks/UseAuth'
 import './Login.css'
-// import { useHistory, useLocation } from 'react-router'
+
 
 const Login = () => {
-    const {user, signInUsingGoogle} = useAuth()
+    const { signInUsingGoogle} = useAuth()
+    // const auth = getAuth();
+     
+//     const location = useLocation();
+// const history= useHistory();
+// const redirect_uri = location.state?.from || '/home';
+
+
+//     const handelGoogleLogin=()=>{
+// signInUsingGoogle()
+// .then(result=>{
+// history.push(redirect_uri)
+// })
+// }
 
     return (
         <div className="services">

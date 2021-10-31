@@ -9,6 +9,7 @@ const Home = () => {
         fetch('https://murmuring-thicket-40618.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setRooms(data))
+        
     },[])
     return (
         <div className="half-width col-12">
