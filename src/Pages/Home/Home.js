@@ -6,7 +6,7 @@ const Home = () => {
     const [rooms, setRooms] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5000/services')
+        fetch('https://murmuring-thicket-40618.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setRooms(data))
     },[])
@@ -14,7 +14,7 @@ const Home = () => {
         <div className="half-width col-12">
             {
                rooms.map(room=><SingleHome 
-                key={room.name}
+                key={room.price}
                 room={room}></SingleHome>)
             }
         </div>

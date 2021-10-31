@@ -8,7 +8,7 @@ const Service = () => {
     
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/services', data)
+        axios.post('https://murmuring-thicket-40618.herokuapp.com/services', data)
         .then(res =>{
             if(res.data.insertedId){
                 alert('added successfully');
